@@ -1,3 +1,23 @@
+[[bin]]
+name = "Document"
+path = "Source/Fn/Binary/Document.rs"
+
+[build-dependencies]
+serde = { version = "1.0.215", features = ["derive"] }
+toml = { version = "0.8.19" }
+
+[dependencies]
+clap = { version = "4.5.1", features = ["cargo"] }
+proc_use = { version = "0.2.1" }
+rayon = { version = "1.8.1" }
+serde = { version = "1.0.197", features = ["derive"] }
+serde_json = { version = "1.0.114" }
+toml = { version = "0.8.10" }
+
+[lib]
+name = "Library"
+path = "Source/Library.rs"
+
 [package]
 autobenches = false
 autobins = false
@@ -12,23 +32,3 @@ name = "Document"
 publish = false
 repository = "https://github.com/CodeEditorLand/Document"
 version = "0.0.1"
-
-[[bin]]
-name = "Document"
-path = "Source/Fn/Binary/Document.rs"
-
-[lib]
-name = "Library"
-path = "Source/Library.rs"
-
-[dependencies]
-clap = { version = "4.5.1", features = ["cargo"] }
-proc_use = { version = "0.2.1" }
-rayon = { version = "1.8.1" }
-serde = { version = "1.0.197", features = ["derive"] }
-serde_json = { version = "1.0.114" }
-toml = { version = "0.8.10" }
-
-[build-dependencies]
-serde = { version = "1.0.215", features = ["derive"] }
-toml = { version = "0.8.19" }
