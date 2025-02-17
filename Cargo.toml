@@ -3,16 +3,16 @@ name = "Document"
 path = "Source/Fn/Binary/Document.rs"
 
 [build-dependencies]
-serde = { version = "1.0.215", features = ["derive"] }
-toml = { version = "0.8.19" }
+serde = { version = "1.0.217", features = ["derive"] }
+toml = { version = "0.8.20" }
 
 [dependencies]
-clap = { version = "4.5.1", features = ["cargo"] }
+clap = { version = "4.5.30", features = ["cargo"] }
 proc_use = { version = "0.2.1" }
-rayon = { version = "1.8.1" }
-serde = { version = "1.0.197", features = ["derive"] }
-serde_json = { version = "1.0.114" }
-toml = { version = "0.8.10" }
+rayon = { version = "1.10.0" }
+serde = { version = "1.0.217", features = ["derive"] }
+serde_json = { version = "1.0.138" }
+toml = { version = "0.8.20" }
 
 [lib]
 name = "Library"
@@ -25,7 +25,7 @@ autoexamples = false
 autotests = false
 default-run = "Document"
 documentation = "https://Documentation.Document.Editor.Land"
-edition = "2021"
+edition = "2024"
 homepage = "https://Document.Editor.Land"
 license-file = "LICENSE"
 name = "Document"
